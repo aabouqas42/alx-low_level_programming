@@ -1,4 +1,4 @@
 #ifndef HEADER
 #define HEADER
-#define ABS(num)(num < 0 ? -num : num)
+#define ABS(x)(x < 0 ? -x : x)
 #endif
