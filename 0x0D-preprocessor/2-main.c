@@ -5,7 +5,7 @@
  *
  * Description:
  * The program will display the current source file name form __FILE__
- * Return: 0 The programe exits with 0 SECCUSS
+ * Return: 0 The program exits with 0 SECCUSS
  *
  */
 
