@@ -3,7 +3,7 @@
 /**
  * dlistint_len - function thats returns the size of the list
  * @h: pointer to the first node of the list
- * return: size of the list
+ * Return: size of the list
  */
 
 size_t	dlistint_len(const dlistint_t *h)
