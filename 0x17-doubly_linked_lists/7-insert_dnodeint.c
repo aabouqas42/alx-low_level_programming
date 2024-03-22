@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * creat_node - function thats create a new node
+ * _creat_node - function thats create a new node
  * @data: integer reper the data to be insert to the list
  * Return: pointer to the node we created
  */

@@ -15,13 +15,13 @@ int	free_at_index_zero(dlistint_t **head)
 		return (-1);
 	if (dlistint_len(node) == 1)
 	{
-		free (node);
+		free(node);
 		(*head) = NULL;
 		return (1);
 	}
 	(*head) = (*head)->next;
 	(*head)->prev = NULL;
-	free (node);
+	free(node);
 	return (1);
 }
 
@@ -51,7 +51,7 @@ int	delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			curr = node->next;
 			node->next = node->next->next;
 			node->next->prev = curr->prev;
-			free (curr);
+			free(curr);
 			return (1);
 		}
 		i++;
