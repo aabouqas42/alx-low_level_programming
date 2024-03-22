@@ -13,7 +13,7 @@ int	free_at_index_zero(dlistint_t **head)
 	node = *head;
 	if (node == NULL)
 		return (-1);
-	if (dlistint_len(node) == 1)
+	if (node->next == NULL && node->prev == NULL)
 	{
 		free(node);
 		(*head) = NULL;
