@@ -11,16 +11,15 @@ list_t	*craete_node(const char *str)
 	list_t	*new_node;
 	size_t	size;
 
+	if (str == NULL)
+		return (NULL);
 	size = 0;
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return (NULL);
 	while (str && str[size])
 		size++;
-	if (str == NULL)
-		new_node->str = strdup("");
-	else
-		new_node->str = strdup(str);
+	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 		return (NULL);
 	new_node->len = size;
