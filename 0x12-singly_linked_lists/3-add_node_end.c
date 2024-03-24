@@ -37,6 +37,8 @@ list_t	*add_node_end(list_t **head, const char *str)
 	list_t	*node;
 	list_t	*new_node;
 
+	if (str == NULL)
+		return (NULL);
 	node = *head;
 	new_node = craete_node(str);
 	if (new_node == NULL)
