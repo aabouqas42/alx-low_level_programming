@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * craete_node - functoion thats create a new node
+ * creat_node - functoion thats create a new node
  * @str: pointer to char contais a string
  * Return: pointer to new node
  */
