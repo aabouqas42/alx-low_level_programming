@@ -21,7 +21,10 @@ list_t	*craete_node(const char *str)
 		size++;
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
-		return (free (new_node), NULL);
+	{
+		free (new_node);
+		return (NULL);
+	}
 	new_node->len = size;
 	new_node->next = NULL;
 	return (new_node);
