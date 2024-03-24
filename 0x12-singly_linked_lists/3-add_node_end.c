@@ -17,6 +17,8 @@ list_t	*craete_node(const char *str)
 		return (NULL);
 	while (str[size])
 		size++;
+	if (str == NULL)
+		str = "";
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 		return (NULL);
@@ -37,8 +39,6 @@ list_t	*add_node_end(list_t **head, const char *str)
 	list_t	*node;
 	list_t	*new_node;
 
-	if (str == NULL)
-		return (NULL);
 	node = *head;
 	new_node = craete_node(str);
 	if (new_node == NULL)
