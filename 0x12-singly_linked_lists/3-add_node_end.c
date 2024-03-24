@@ -15,7 +15,7 @@ list_t	*craete_node(const char *str)
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return (NULL);
-	while (str[size])
+	while (str && str[size])
 		size++;
 	if (str == NULL)
 		new_node->str = strdup("");
