@@ -3,17 +3,15 @@ SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 RM = rm -f
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o school
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 %.o: %.c
 	$(CC) -c $< -o $@
 clean:
-	$(RM) *~ school
+	$(RM) *~ $(NAME)
 oclean:
-	$(RM) main.o school.o
+	$(RM) $(OBJ)
 fclean: clean oclean
 
-re: fclean all
+re: oclean all
 
